@@ -22,33 +22,52 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href='../css/main.min.css'>
 
 </head>
 
 <body>
+
+<nav>
+	<div id="toggle">
+    <div class="span" id="one"></div>
+    <div class="span" id="two"></div>
+    <div class="span" id="three"></div>
+	</div>
+</nav>
+
+ <div id="resize">
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="html/rancking.html">Rancking</a></li>
+  </ul>
+</div> 
+
 <div class="end-score">
 	<div class="container">
 		<p>Your score is.. </p>
-		<span class="end-score-text"></span>
+		<h2 class="end-score-text"></h2>
 		<button id="btnReload" class="button">retry</button>
 	</div>
 </div>
 	<!-- Custom HTML -->
+
 <div class="container game-block">
 		<h1 id="logo" class="h1">text-game</h1>
-		<div class="game-composition">
-			<h2 class="h2" id="word">word</h2>
-			<input id="main-input" type="text" placeholder="type to start...">
-		  <div class="score">
-			  <div class="count-block">Score: <span id="count">0</span></div>
-		    <div id="clock">Time: 60s</div>
-		  </div>
-			<p>For get started just type the text inside the field above, check the time and may the <strong>Force</strong> be with you.</p>
+		<div class="game-start">
+			<div class="game-composition">
+				<h2 class="h2" id="word">word</h2>
+				<input id="main-input" type="text" placeholder="type to start...">
+			  <div class="score">
+				  <div class="count-block">Score: <span id="count">0</span></div>
+			    <div id="clock">Time: 60s</div>
+			  </div>
+				<p>For get started just type the text inside the field above, check the time and may the <strong>Force</strong> be with you.</p>
+			</div>
 		</div>
 </div>
 
 	<script src="js/scripts.min.js"></script>
-
 </body>
 </html>
